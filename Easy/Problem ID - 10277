@@ -1,0 +1,10 @@
+-- Problem- Find all inspections which are part of an inactive program.
+
+--Table
+    los_angeles_restaurant_health_inspections
+
+-- Source - StrataScrach (problem ID # 10277)
+
+select * 
+from los_angeles_restaurant_health_inspections
+where program_status = 'Inactive';
