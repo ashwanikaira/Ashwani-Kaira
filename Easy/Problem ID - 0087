@@ -1,0 +1,10 @@
+-- Problem: Find all posts which were reacted to with a heart
+-- Source: StrataScratch (Problem ID # 10087)
+-- Level: Easy
+-- Skills
+
+SELECT Distinct p.*
+from facebook_post p
+join facebook_reaction r
+on p.post_id = r.post_id
+where r.reaction = "heart";
